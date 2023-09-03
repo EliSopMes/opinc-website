@@ -1,0 +1,35 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+  height: 130px;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+.navbar-image-div {
+  height: 100px; width: 200px; margin-left:10%;
+}
+
+.navbar-image {
+  height: 90px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+#navbarSupportedContent {
+  margin-right: 2%;
+}
+
+#navbarDropdown {
+  text-decoration:none;
+}

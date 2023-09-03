@@ -1,0 +1,38 @@
+<div class="navbar fixed-top navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <div class="navbar-image-div">
+        <%= image_tag asset_path('Georg_Opinc.png'), class:"navbar-image" %>
+      </div>
+    <% end %>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+          <%= link_to "Startseite", root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown-toggle nav-link" role="button" id="navbarDropdown"data-bs-toggle="dropdown" aria-expanded="false">Produkte</div>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <%= link_to "Stanz- und Biegeteile", products_path, class: "dropdown-item" %>
+            <%= link_to "Standardteile", products_path, class: "dropdown-item" %>
+            <%= link_to "Kaltformteile", products_path, class: "dropdown-item" %>
+            <%= link_to "Frästeile", products_path, class: "dropdown-item" %>
+            <%= link_to "Drehteile", products_path, class: "dropdown-item" %>
+            <%= link_to "Stanzteil", products_path, class: "dropdown-item" %>
+            <%= link_to "Dreh-, Stanz- und Biegeteile", products_path, class: "dropdown-item" %>
+          </div>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Mitarbeiter", employees_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Kontakt", requests_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Impressum", impressum_path, class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
