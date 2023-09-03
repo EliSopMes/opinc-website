@@ -1,17 +1,19 @@
 .card-product {
   overflow: hidden;
   height: 300px;
-  background: white;
+  background: #4B4E57;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  color: white;
 }
 
 .card-product img {
   height: 100%;
   object-fit: cover;
-  margin-left: 20px;
+  width: 482px;
+  // margin-left: 20px;
 }
 
 .card-product h2 {
@@ -36,5 +38,48 @@
 .home-divs {
   width:44%;
   margin: 10px 30px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.employee-card {
+  background-color: #DDDDE3;
+  color: #2E2E38;
+  height: 60vh;
+  width: 21vw;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.employee-card a {
+  color: #2E2E38;
+}
+
+.image-div {
+  width: 21vw;
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.opa {
+  background-image: image-url('people/opa.jpg');
+}
+
+.oma {
+  background-image: image-url('people/oma.jpg');
+}
+
+.ute {
+  background-image: image-url('people/ute.jpg');
+}
+
+.volz {
+  background-image: image-url('people/volz.jpg');
+}
+
+.image-people {
+  object-fit: contain;
+}
+
+.people-info {
+  padding: 20px;
 }

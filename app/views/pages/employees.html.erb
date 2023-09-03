@@ -1,26 +1,43 @@
-<div>
-  <div>
-    <h4>Georg Opinc</h4>
-    <p>Inhaber / Aussendienst</p>
-    <p>Tel.: 0 74 24 / 93 15-11 <br> Fax: 0 74 24 / 93 15-20</p>
-    <p>E-Mail: g.opinc@opinc.de</p>
+<h2>Unsere Mitarbeiter</h2>
+<hr>
+<div class="d-flex justify-content-between mt-5">
+  <div class="employee-card">
+    <div class="image-div opa"></div>
+    <div class="people-info">
+      <h4>Georg Opinc</h4>
+      <p>Inhaber / Aussendienst</p>
+      <p>Tel.: 0 74 24 / 93 15-11 <br> Fax: 0 74 24 / 93 15-20</p>
+      <p>E-Mail: <%= mail_to 'g.opinc@opinc.de', 'g.opinc@opinc.de'%></p>
+    </div>
   </div>
-  <div>
-    <h4>Ute Opinc</h4>
-    <p>Aussendienst</p>
-    <p>Tel.: 0 74 24 / 93 15-13 <br> Fax: 0 74 24 / 93 15-20</p>
-    <p>E-Mail: u.opinc@opinc.de</p>
+  <div class="employee-card">
+    <div class="image-div ute">
+    </div>
+    <div class="people-info">
+      <h4>Ute Opinc</h4>
+      <p>Aussendienst</p>
+      <p>Tel.: 0 74 24 / 93 15-13 <br> Fax: 0 74 24 / 93 15-20</p>
+      <p>E-Mail: <%= mail_to 'u.opinc@opinc.de', 'u.opinc@opinc.de'%></p>
+    </div>
   </div>
-  <div>
-    <h4>Rosalinde Opinc</h4>
-    <p>Buchhaltung</p>
-    <p>Tel.: 0 74 24 / 93 15-14 <br> Fax: 0 74 24 / 93 15-20</p>
-    <p>E-Mail: r.opinc@opinc.de</p>
+  <div class="employee-card">
+    <div class="image-div oma">
+    </div>
+    <div class="people-info">
+      <h4>Rosalinde Opinc</h4>
+      <p>Buchhaltung</p>
+      <p>Tel.: 0 74 24 / 93 15-14 <br> Fax: 0 74 24 / 93 15-20</p>
+      <p>E-Mail: <%= mail_to 'r.opinc@opinc.de', 'r.opinc@opinc.de'%></p>
+    </div>
   </div>
-  <div>
-    <h4>Elisabeth Volz</h4>
-    <p>Sekretariat</p>
-    <p>Tel.: 0 74 24 / 93 15-0 <br> Fax: 0 74 24 / 93 15-20</p>
-    <p>E-Mail: e.volz@opinc.de</p>
+  <div class="employee-card">
+    <div class="image-div volz">
+    </div>
+      <div class="people-info">
+      <h4>Elisabeth Volz</h4>
+      <p>Sekretariat</p>
+      <p>Tel.: 0 74 24 / 93 15-0 <br> Fax: 0 74 24 / 93 15-20</p>
+      <p>E-Mail: <%= mail_to 'e.volz@opinc.de', 'e.volz@opinc.de'%></p>
+    </div>
   </div>
 </div>

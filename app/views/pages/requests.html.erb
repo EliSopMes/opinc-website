@@ -1,12 +1,19 @@
 <div>
   <h3>Immer für Sie erreichbar</h3>
+  <hr>
   <br>
   <%= form_with url: "/pages/create", method: :post do |form| %>
-    <%= form.text_field :firma, placeholder:"Firma" %><br><br>
-    <%= form.text_field :name, placeholder:"Name, Vorname*"%><br><br>
-    <%= form.text_field :number, placeholder:"Telefonnummer*" %><br><br>
-    <%= form.text_field :mail, placeholder:"E-Mail*" %><br><br>
-    <%= form.text_field :message, placeholder:"Ihre Nachricht an uns*" %><br><br>
-    <%= form.submit "Nachricht senden" %>
+    <div class="d-flex">
+      <div>
+        <%= form.text_field :firma, placeholder:"Firma", class:"form-styling" %><br>
+        <%= form.text_field :name, placeholder:"Name, Vorname*", class:"form-styling"%><br>
+        <%= form.text_field :number, placeholder:"Telefonnummer*", class:"form-styling" %><br>
+        <%= form.text_field :mail, placeholder:"E-Mail*", class:"form-styling" %><br>
+      </div>
+      <div>
+        <%= form.text_area :message, placeholder:"Ihre Nachricht an uns*", class:"form-styling-message" %><br><br>
+      </div>
+    </div>
+    <%= form.submit "Nachricht senden", class:"btn-form" %>
   <% end %>
 </div>
