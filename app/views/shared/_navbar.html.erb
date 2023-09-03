@@ -14,13 +14,13 @@
         <li class="nav-item dropdown">
           <div class="dropdown-toggle nav-link" role="button" id="navbarDropdown"data-bs-toggle="dropdown" aria-expanded="false">Produkte</div>
           <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <%= link_to "Stanz- und Biegeteile", products_path, class: "dropdown-item" %>
-            <%= link_to "Standardteile", products_path, class: "dropdown-item" %>
-            <%= link_to "Kaltformteile", products_path, class: "dropdown-item" %>
-            <%= link_to "Frästeile", products_path, class: "dropdown-item" %>
-            <%= link_to "Drehteile", products_path, class: "dropdown-item" %>
-            <%= link_to "Stanzteil", products_path, class: "dropdown-item" %>
-            <%= link_to "Dreh-, Stanz- und Biegeteile", products_path, class: "dropdown-item" %>
+            <%= link_to "Drehteile", products_path(anchor: 'Dreh'), class: "dropdown-item" %>
+            <%= link_to "Frästeile", products_path(anchor: 'Fraes'), class: "dropdown-item" %>
+            <%= link_to "Kaltformteile", products_path(anchor: 'Kaltform'), class: "dropdown-item" %>
+            <%= link_to "Standardteile", products_path(anchor: 'Standard'), class: "dropdown-item" %>
+            <%= link_to "Stanzteil", products_path(anchor: 'Stanz'), class: "dropdown-item" %>
+            <%= link_to "Stanz- und Biegeteile", products_path(anchor: 'StanzBiege'), class: "dropdown-item" %>
+            <%= link_to "Dreh-, Stanz- und Biegeteile", products_path(anchor: 'DrehStanzBiege'), class: "dropdown-item" %>
           </div>
         </li>
         <li class="nav-item">

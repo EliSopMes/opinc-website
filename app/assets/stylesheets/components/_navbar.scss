@@ -1,15 +1,19 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
-  height: 130px;
+  height: 160px;
+  padding: 0px 60px 0px 40px;
 }
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  width: 35vw;
 }
 
 .nav-item {
   display: inline-block;
+  margin-right: 13px;
 }
 
 .navbar-nav {
