@@ -1,0 +1,11 @@
+<h3>Sie haben eine neue Nachricht </h3>
+<p><%= @message[:name] %> ist unter folgenden Kontakdaten zu erreichen:</p>
+<% if @message[:firma] != nil %>
+  <p>Firma: <%= @message[:firma] %> </p>
+<% end %>
+<p>Telefon: <%= @message[:number] %></p>
+<p>Email: <%= @message[:mail] %></p>
+<% if @message[:message] != nil %>
+  <p>Es wurde folgende Nachricht hinterlassen:</p>
+  <p><%= @message[:message] %> </p>
+<% end %>
