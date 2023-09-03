@@ -1,10 +1,12 @@
 <div>
-  <form action="pages/create" method="post">
-    <input type="text" id="firma" name="firma" placeholder="Firma"><br><br>
-    <input type="text" id="name" name="name" placeholder="Name, Vorname*"><br><br>
-    <input type="text" id="number" name="number" placeholder="Telefonnummer*"><br><br>
-    <input type="text" id="mail" name="mail" placeholder="E-Mail*"><br><br>
-    <input type="text" id="message" name="message" placeholder="Ihre Nachricht an uns*"><br><br>
-    <input type="submit" value="Nachricht senden">
-  </form>
+  <h3>Immer für Sie erreichbar</h3>
+  <br>
+  <%= form_with url: "/pages/create", method: :post do |form| %>
+    <%= form.text_field :firma, placeholder:"Firma" %><br><br>
+    <%= form.text_field :name, placeholder:"Name, Vorname*"%><br><br>
+    <%= form.text_field :number, placeholder:"Telefonnummer*" %><br><br>
+    <%= form.text_field :mail, placeholder:"E-Mail*" %><br><br>
+    <%= form.text_field :message, placeholder:"Ihre Nachricht an uns*" %><br><br>
+    <%= form.submit "Nachricht senden" %>
+  <% end %>
 </div>
