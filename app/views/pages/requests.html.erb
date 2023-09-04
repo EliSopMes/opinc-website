@@ -2,18 +2,29 @@
   <h2>Immer für Sie erreichbar</h2>
   <hr>
   <br>
-  <%= form_with url: "/pages/create", method: :post do |form| %>
-    <div class="d-flex">
-      <div>
-        <%= form.text_field :firma, placeholder:"Firma", class:"form-styling" %><br>
-        <%= form.text_field :name, placeholder:"Name, Vorname*", class:"form-styling"%><br>
-        <%= form.text_field :number, placeholder:"Telefonnummer*", class:"form-styling" %><br>
-        <%= form.text_field :mail, placeholder:"E-Mail*", class:"form-styling" %><br>
+  <div class="d-flex justify-content-between">
+    <div>
+    <%= form_with url: "/pages/create", method: :post do |form| %>
+      <div class="d-flex">
+        <div>
+          <%= form.text_field :firma, placeholder:"Firma", class:"form-styling" %><br>
+          <%= form.text_field :name, placeholder:"Name, Vorname*", class:"form-styling"%><br>
+          <%= form.text_field :number, placeholder:"Telefonnummer*", class:"form-styling" %><br>
+          <%= form.text_field :mail, placeholder:"E-Mail*", class:"form-styling" %><br>
+        </div>
+        <div>
+          <%= form.text_area :message, placeholder:"Ihre Nachricht an uns*", class:"form-styling-message" %><br><br>
+        </div>
       </div>
-      <div>
-        <%= form.text_area :message, placeholder:"Ihre Nachricht an uns*", class:"form-styling-message" %><br><br>
-      </div>
+      <%= form.submit "Nachricht senden", class:"btn-form" %>
+    <% end %>
     </div>
-    <%= form.submit "Nachricht senden", class:"btn-form" %>
-  <% end %>
+    <div>
+      <iframe src="https://storage.googleapis.com/maps-solutions-8reh7zpkcv/locator-plus/pjl1/locator-plus.html"
+        width="500px" height="400px"
+        style="border:0;"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
 </div>
